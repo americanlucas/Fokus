@@ -13,7 +13,7 @@ const tempoNaTela = document.querySelector('#timer')
 const musica = new Audio('/sons/luna-rise-part-one.mp3')
 musica.loop = true
 
-let tempoDecorridoEmSegundos = 1500
+let tempoDecorridoEmSegundos = 3000
 let intervaloId = null
 
 musicaFocoInput.addEventListener('change', () => {
@@ -26,7 +26,7 @@ musicaFocoInput.addEventListener('change', () => {
 })
 
 focoBotao.addEventListener('click', () => {
-     tempoDecorridoEmSegundos = 1500
+     tempoDecorridoEmSegundos = 3000
      alterarContexto('foco')
      focoBotao.classList.add('active')
 })
